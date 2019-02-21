@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <header class="header">
+        <div class="header__content">
+          <div class="header__logo"> <a href="/" class="logo">
+        <img class="hide-mob" src="img/logo.png" alt="">
+        <img class="show-mob js-mob-logo" src="img/logo-rose.png" alt="" data-src="img/logo.png">
+      </a> </div>
+          <div class="header__burger">
+            <div class="burger js-burger"> <span></span> <span></span> <span></span> </div>
+          </div>
+        </div>
+        <div class="menu js-menu">
+          <div class="menu__content">
+            <div class="menu__nav"> <a href="#item1" class="js-menu-link">Как это работает?</a> <a href="#item2" class="js-menu-link">Слайдер, но лучше</a> <a href="#item3" class="js-menu-link">Взаимность В ОБЩЕНИИ</a> <a href="#item4" class="js-menu-link">В чем наша сила?</a>              </div>
+            <div class="menu__download"> <a href="#" class="appstore-btn"></a>
+              <p>Скачать приложение с App Store</p>
+            </div>
+            <div class="menu__nav">
+              <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__link">О проекте</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Правила сообщества</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Условия</a></li>
+              </ul>
+            </div>
+            <div class="menu__social">
+              <ul class="social">
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+</a></li>
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="line-container">
+        <div class="line-bg"></div>
+        <div class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title"> Вернем ценность общению </h1>
+            <div class="hero__btns"> <a href="#" class="appstore-btn"></a> </div>
+          </div>
+          <div class="hero__gradient show-mob"></div>
+        </div>
+        <div class="main">
+          <div class="main-item" id="item1">
+            <div class="main-item__col parallax-block parallax-block1" id="firstAnimation">
+              <!--<script src="animation/1-img/test.js"></script>-->
+              <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1008px; height:1008px;"> <canvas id="canvas" style=" display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height:auto; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+              </div>
+            </div>
+            <div class="main-item__col parallax-block parallax-block2">
+              <div class="main-item__text">
+                <p>Можно влюбиться с первого взгляда?</p>
+                <p>Конечно можно!</p>
+                <p>Мы вам поможем проявить особое внимание к понравившейся персоне.</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-item" id="item2">
+            <div class="main-item__col parallax-block parallax-block6">
+              <div class="main-item__text">
+                <p>Случайно пролистали карточку? Не беда!</p>
+                <p>Вы всегда можете к ней вернуться. У всех есть второй шанс.</p>
+              </div>
+            </div>
+            <div class="main-item__col" id="secondAnimation">
+              <!--<script src="animation/2-img/test_3.js"></script>-->
+              <div id="animation_container1" style="background-color:rgba(255, 255, 255, 0.00);"> <canvas id="canvas1" style="display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                <div id="dom_overlay_container1" style="pointer-events:none; overflow:hidden; width:1200px; height:950px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-item " id="item3">
+            <div class="main-item__col parallax-block parallax-block4" id="thirdAnimation">
+              <!--<script src="animation/3-img/test2_4_to_check.js"></script>-->
+              <div id="animation_container2" style="background-color:rgba(255, 255, 255, 0.00);"> <canvas id="canvas2" style=" display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                <div id="dom_overlay_container2" style="pointer-events:none; overflow:hidden; width:900px; height:750px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+              </div>
+            </div>
+            <div class="main-item__col parallax-block parallax-block5">
+              <div class="main-item__text">
+                <p>Больше никаких надоедливых и некорректных сообщений!</p>
+                <p>Мы за взаимность и культуру общения.</p>
+              </div>
+              <div class="main-item__subtext">
+                <p>Наша система тщательно проверяет всех пользователей.</p>
+                <p>И вся информация о вас остаётся приватной, пока вы сами не захотите открыть её своему избраннику.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner" style="background-image: url('img/bg.jpg')" id="item4">
+        <div class="banner__content parallax-block parallax-block3 ">
+          <div class="banner__text   ">
+            <div class="italic">
+              <p>И никаких затрат на сервис!</p>
+              <p>В нашем приложении инициатор напрямую поощряет ответчика.</p>
+            </div>
+            <p>Вы получаете приятный бонус за общение в виде денежного вознаграждения.</p>
+            <p>Не тратьте своё время впустую!</p>
+          </div>
+          <div class="banner__image" id="fourthAnimation">
+            <!--<img src="img/app.png" alt="">-->
+            <!--<script src="animation/3-img/test2_4_to_check.js"></script>-->
+            <div id="animation_container3" style="background-color:rgba(255, 255, 255, 0.00); width:700px; height:500px"> <canvas id="canvas3" width="700" height="500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+              <div id="dom_overlay_container3" style="pointer-events:none; overflow:hidden; width:700px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__logo"> <a href="/" class="logo">
+        <img src="img/logo-reverse.png" alt=""/>
+      </a>
+            <div class="footer__logo-text"> <img src="img/text.png" alt="" /> </div>
+          </div>
+          <div class="footer__desc">
+            <div class="footer__download"> <a href="#" class="appstore-btn "></a> </div>
+            <div class="footer__text">
+              <p><span>RealDating</span> - это современное, удобное, а главное бесплатное приложение для знакомств. Оно работает на смартфонах под управлением IOS и Android. </p>
+              <p>Простое и понятное приложения, здесь вы узнаете что такое живое и настоящее общение в интернете. Надежный инструмент тех, кто хочет больше общаться и знакомиться с новыми людьми. Наше приложение вы всегда сможете найти в AppStore и GooglePlay.
+                </p>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <ul class="nav">
+              <li class="nav__item"><a href="#" class="nav__link">О проекте</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Правила сообщества</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Условия</a></li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <ul class="social">
+              <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+              <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+</a></li>
+              <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

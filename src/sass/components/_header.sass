@@ -1,0 +1,79 @@
+.header
+	position: absolute
+	top: 0
+	width: 100%
+	background-color: transparent
+	&__content
+		display: flex
+		justify-content: flex-end
+		padding: 40px 34px
+		align-items: center
+		transition: 0.5s
+		position: relative
+		&:after
+			content: ''
+			background-color: #f53e4f
+			position: absolute
+			width: 0
+			height: 100%
+			top: 0
+			right: 0
+			z-index: 2
+			transition: ease-in-out 0.5s
+		+xs
+			padding: 10px 34px
+		&.menu-open
+			&:after
+				width: 100%
+			//transition: 0.5s
+			//background-color: #f53e4f
+			//
+			//z-index: 11
+	&__logo
+		margin-right: 73px
+		z-index: 11
+		+md
+			margin-right: 31px
+	&__burger
+		z-index: 11
+		position: relative
+
+.logo
+	display: block
+	height: 60px
+	width: 270px
+	+md
+		width: 160px
+		height: 36px
+	img
+		height: 100%
+		width: 100%
+
+.burger
+	cursor: pointer
+	span
+		transition: 0.3s
+		height: 5px
+		width: 36px
+		background-color: #ffffff
+		display: block
+		+md
+			height: 4px
+			width: 26px
+		&:not(:last-child)
+			margin-bottom: 6px
+			+md
+				margin-bottom: 4px
+	&.is-active
+		span
+			&:nth-child(1)
+				transform: translate(1px, 12px) rotate(45deg)
+				+md
+					transform: translate(1px, 8px) rotate(45deg)
+			&:nth-child(2)
+				transform: translateX(100%)
+				opacity: 0
+			&:nth-child(3)
+				transform: translate(1px, -10px) rotate(-45deg)
+				+md
+					transform: translate(1px, -8px) rotate(-45deg)

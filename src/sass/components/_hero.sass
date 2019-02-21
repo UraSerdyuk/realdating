@@ -1,0 +1,60 @@
+.hero
+	background-image: url('../img/hero.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	min-height: 100vh
+	display: flex
+	width: 100%
+	align-items: flex-end
+	justify-content: flex-end
+	padding: 200px 140px 50px
+	+md
+		padding: 220px 67px 26px
+		min-height: auto
+	+xs
+		height: 400px
+		padding: 0
+		position: relative
+	+r(425)
+		background-image: url('../img/hero-mob.jpg')
+	&__content
+		max-width: 620px
+		z-index: 5
+		text-align: right
+		+r(1100)
+			max-width: 480px
+		+md
+			max-width: 300px
+		+xs
+			position: absolute
+			bottom: 0
+			right: 41px
+			transform: translateY(80%)
+	&__title
+		color: #fff
+		margin-bottom: 22px
+		text-align: right
+		+xs
+			color: #f53e4f
+	&__btns
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		.appstore-btn
+			+xs
+				background-image: url("../img/appstore-rose.png")
+				height: 51px
+				width: 173px
+		.btn
+			margin-right: 20px
+			+xs
+				display: none
+	&__gradient
+		position: absolute
+		bottom: 0
+		width: 100%
+		left: 0
+		height: 134px
+		background-image: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+
